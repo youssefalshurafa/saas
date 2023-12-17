@@ -1,4 +1,5 @@
 'use client';
+import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +7,15 @@ import React from 'react';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare, FaFacebook, FaInstagramSquare } from 'react-icons/fa';
 import { RiTwitterXFill } from 'react-icons/ri';
+
 export default function Intro() {
+  const { ref } = useSectionInView('Home', 0.5);
   return (
-    <section className=" mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -75,42 +82,6 @@ export default function Intro() {
           Contact me here{' '}
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-      </motion.div>
-      <motion.div
-        className="flex justify-center text-3xl gap-4 mt-4"
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <a
-          href=""
-          className="outline-none focus:scale-110  hover:scale-150  active:scale-105 transition bg-gray-white p-4 text-gray-700 flex items-center gap-2 rounded-full "
-        >
-          <FaFacebook />
-        </a>
-        <a
-          href=""
-          className="outline-none focus:scale-110 hover:scale-150  active:scale-105 transition bg-gray-white p-4 text-gray-700 flex items-center gap-2 rounded-full "
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href=""
-          className="outline-none focus:scale-110 hover:scale-150  active:scale-105 transition bg-gray-white p-4 text-gray-700 flex items-center gap-2 rounded-full "
-        >
-          <FaGithubSquare />
-        </a>
-        <a
-          href=""
-          className="outline-none focus:scale-110 hover:scale-150  active:scale-105 transition bg-gray-white p-4 text-gray-700 flex items-center gap-2 rounded-full "
-        >
-          <RiTwitterXFill />
-        </a>
-        <a
-          href=""
-          className="outline-none focus:scale-110 hover:scale-150  active:scale-105 transition bg-gray-white p-4 text-gray-700 flex items-center gap-2 rounded-full "
-        >
-          <FaInstagramSquare />
-        </a>
       </motion.div>
     </section>
   );

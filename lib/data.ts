@@ -1,11 +1,26 @@
-import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
 import corpcommentImg from '@/public/corpcomment.png';
 import rmtdevImg from '@/public/rmtdev.png';
 import wordanalyticsImg from '@/public/wordanalytics.png';
-
+import {
+  BsDiscord,
+  BsLinkedin,
+  BsTelegram,
+  BsThreads,
+  BsThreadsFill,
+  BsTiktok,
+} from 'react-icons/bs';
+import {
+  FaGithubSquare,
+  FaFacebook,
+  FaInstagramSquare,
+  FaSteam,
+  FaReddit,
+  FaPinterest,
+  FaTumblrSquare,
+  FaWhatsappSquare,
+  FaSnapchat,
+} from 'react-icons/fa';
+import { RiTwitterXFill } from 'react-icons/ri';
 export const links = [
   {
     name: 'Home',
@@ -20,12 +35,12 @@ export const links = [
     hash: '#projects',
   },
   {
-    name: 'Skills',
-    hash: '#skills',
+    name: 'Reviews',
+    hash: '#reviews',
   },
   {
-    name: 'Experience',
-    hash: '#experience',
+    name: 'SocialHub',
+    hash: '#socialHub',
   },
   {
     name: 'Contact',
@@ -33,30 +48,42 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const reviewsData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2019',
+    name: 'Sarah Thompson',
+    job: 'Marketing Manager',
+    review:
+      "Working with John Doe was a game-changer for our e-commerce site. His attention to detail and creative solutions elevated our user experience. John Doe's dedication and timely communication made the entire process smooth. Highly recommend!",
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    name: 'Alex Rodriguez',
+    job: 'CEO, Tech Innovations Inc.',
+    review:
+      'Exceptional developer! John Doe transformed our outdated website into a modern, user-friendly masterpiece. His problem-solving skills and commitment to quality stood out. Our online presence has never been stronger. Thanks, John Doe!',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
+    name: ' Emily Chen',
+    job: 'Product Manager',
+    review:
+      "Kudos to John Doe for his outstanding work on our mobile app. His coding expertise and innovative approach greatly improved functionality. John Doe is not just a developer; he's a strategic partner in our tech journey.",
+  },
+  {
+    name: ' James Carter',
+    job: 'IT Director, Global Solutions',
+    review:
+      'John Doe exceeded our expectations in every way. His technical proficiency and ability to grasp our vision were impressive. The website he built is not just functional but also aesthetically pleasing. Truly a top-notch developer!',
+  },
+  {
+    name: 'Grace Kim',
+    job: 'Creative Director',
+    review:
+      'John Doe is a true professional. His collaborative nature and willingness to go the extra mile made our project enjoyable. He took our ideas and turned them into a visually stunning and highly functional website. 10/10 recommend!',
+  },
+  {
+    name: 'Maria Rodriguez',
+    job: 'Business Owner, Rodriguez Enterprises',
+    review:
+      "Working with John Doe was a pleasure. His expertise in web development shone through as he revamped our site, delivering sleek design and seamless functionality. John Doe's commitment to deadlines and open communication made the entire process stress-free. Highly recommended for anyone seeking a skilled and reliable developer.",
   },
 ] as const;
 
@@ -84,24 +111,20 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'Prisma',
-  'MongoDB',
-  'Redux',
-  'GraphQL',
-  'Apollo',
-  'Express',
-  'PostgreSQL',
-  'Python',
-  'Django',
-  'Framer Motion',
+export const socialData = [
+  FaInstagramSquare,
+  RiTwitterXFill,
+  FaGithubSquare,
+  FaFacebook,
+  BsLinkedin,
+  BsDiscord,
+  BsThreadsFill,
+  FaSteam,
+  FaReddit,
+  FaPinterest,
+  FaTumblrSquare,
+  FaWhatsappSquare,
+  FaSnapchat,
+  BsTelegram,
+  BsTiktok,
 ] as const;
