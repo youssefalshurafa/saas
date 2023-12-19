@@ -1,4 +1,5 @@
 import About from '@/components/about';
+import Contact from '@/components/contact';
 import Intro from '@/components/intro';
 import Projects from '@/components/projects';
 import Reviews from '@/components/reviews';
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Reviews />
       <SocialHub />
+      <Contact />
     </main>
   );
 }

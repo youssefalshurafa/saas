@@ -37,7 +37,7 @@ export default function SocialHub() {
             whileInView="animate"
             custom={index}
           >
-            <Icon className=" hover:scale-150" />
+            <Icon className=" hover:scale-150 dark:text-gray-50" />
           </motion.li>
         ))}
       </ul>

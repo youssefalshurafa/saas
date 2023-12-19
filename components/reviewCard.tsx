@@ -25,7 +25,7 @@ export default function ReviewCard() {
       {reviewsData.map((review, index) => (
         <div
           key={index}
-          className="flex cursor-default flex-col gap-3 bg-gray-200 hover:bg-gray-300 p-8 rounded-lg shadow-md transition "
+          className="flex cursor-default flex-col gap-3 dark:bg-gray-400 dark:text-gray-900  bg-gray-200 hover:bg-gray-300 p-8 rounded-lg shadow-md transition  "
         >
           <div>
             <h3 className=" text-2xl font-poppins">{review.name}</h3>
